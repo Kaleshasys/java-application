@@ -19,7 +19,7 @@ on:
         required: true  
         type: string 
     secrets:
-      PAT:
+      token:
         required: true
 
 jobs:
