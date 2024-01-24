@@ -61,7 +61,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'stage'
+      name: 'production'
       url: ${{ env.APP_SERVICE_URL }}
 
     steps:
@@ -75,7 +75,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'java-application-2345'
-          slot-name: 'stage'
+          slot-name: 'production'
           publish-profile: ${{ secrets.APP_SERVICE_PUBLISH_PROFILE }}
           package: '*.jar'
 
