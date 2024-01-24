@@ -18,9 +18,9 @@ on:
       config-path: 
         required: true  
         type: string 
-    # secrets:  
-    #   envPAT:  
-    #     required: true
+    secrets:
+      token:
+        required: true
 
 jobs:
   build:
