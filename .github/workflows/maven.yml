@@ -10,7 +10,7 @@ name: Reusable workflow of Java CI with Maven
 
 on:
   push:
-    branches: [ "none" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   workflow_call:  
